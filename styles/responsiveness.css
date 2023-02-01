@@ -1,0 +1,999 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+}
+
+@media (max-width: 869px) {
+  .primeira-tela {
+    background-image: url(../assets/mob.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    background-position: top center;
+  }
+  .primeira-tela .primeira-tela-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 0;
+    height: 100%;
+  }
+  .primeira-tela .primeira-tela-container img {
+    position: static;
+    width: 350px;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    width: 90%;
+    margin-top: 0em;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    font-size: 0.7rem;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos small,
+.primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    line-height: 1.5em;
+  }
+  .primeira-tela .primeira-tela-container a {
+    margin-top: 2.5em;
+  }
+  .segunda-tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35vh;
+  }
+  .segunda-tela .segunda-tela-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-top: 0em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .segunda-tela .segunda-tela-container p {
+    font-size: 1.3rem;
+  }
+  .segunda-tela .segunda-tela-container small {
+    width: 90%;
+  }
+  .terceira-tela {
+    height: 130vh;
+  }
+  .terceira-tela .terceira-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 2em;
+    padding-top: 0em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    width: 90%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .quarta-tela {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(../assets/mb3.jpg);
+    background-size: cover;
+  }
+  .quarta-tela .quarta-tela-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-left: 0em;
+  }
+  .quarta-tela .quarta-tela-container p {
+    font-size: 1.5rem;
+  }
+  .quarta-tela .quarta-tela-container small {
+    line-height: 1.3rem;
+  }
+  .quarta-tela .quarta-tela-container a {
+    width: 60%;
+  }
+  .quinta-tela {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 55vh;
+    background-image: url(../assets/mob2.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .quinta-tela .quinta-tela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin-right: 0em;
+    margin: 0 auto;
+    width: 80%;
+    gap: 2em;
+  }
+  .quinta-tela .quinta-tela-container p {
+    font-size: 1.7rem;
+  }
+  .quinta-tela .quinta-tela-container small {
+    line-height: 1.3rem;
+  }
+  .sexta-tela {
+    height: 130vh;
+  }
+  .sexta-tela .sexta-tela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 4em;
+    height: 100%;
+    width: 100%;
+    padding: 3em;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 15%;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos p {
+    font-size: 1.4rem;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos small {
+    font-size: 0.7rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    height: 85%;
+    width: 100%;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    transition-duration: 0.3s;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano p {
+    font-size: 1.3rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .preco {
+    font-size: 2.5rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
+    width: 80%;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.7rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
+    font-size: 1rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
+    color: #6201ff;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano a {
+    white-space: nowrap;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano:hover {
+    width: 100%;
+    box-shadow: 0 0 20px 2px #8133ff;
+  }
+  .setima-tela {
+    height: 50vh;
+    background-image: url(../assets/setimaTela.png);
+    background-size: cover;
+  }
+  .setima-tela .setima-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    -webkit-backdrop-filter: brightness();
+    backdrop-filter: brightness(40%);
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 2em;
+    text-align: center;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div p {
+    font-size: 1.6rem;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div small {
+    line-height: 1.3rem;
+  }
+  .setima-tela .setima-tela-container .premium-icon {
+    width: 50%;
+  }
+  .oitava-tela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    gap: 2em;
+  }
+  .oitava-tela p {
+    font-size: 1.3rem;
+  }
+  .oitava-tela a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4em;
+    background-color: #1acc29;
+    box-shadow: 0 0 10px #1acc29;
+  }
+  .oitava-tela a:hover {
+    background-color: #139e1f;
+  }
+  .oitava-tela a img {
+    width: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .primeira-tela {
+    background-image: url(../assets/mob.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    background-position: top center;
+  }
+  .primeira-tela .primeira-tela-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 0;
+    height: 100%;
+  }
+  .primeira-tela .primeira-tela-container img {
+    position: static;
+    width: 350px;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    width: 90%;
+    margin-top: 0em;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    font-size: 0.7rem;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos small,
+.primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    line-height: 1.5em;
+  }
+  .primeira-tela .primeira-tela-container a {
+    margin-top: 2.5em;
+    font-size: 0.7rem;
+  }
+  .terceira-tela {
+    height: 140vh;
+  }
+  .terceira-tela .terceira-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 2em;
+    padding-top: 0em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    width: 90%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .terceira-tela a {
+    font-size: 0.7rem;
+  }
+  .quarta-tela {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(../assets/mb3.jpg);
+    background-size: cover;
+  }
+  .quarta-tela .quarta-tela-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-left: 0em;
+  }
+  .quarta-tela .quarta-tela-container p {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .quarta-tela .quarta-tela-container small {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    width: 70%;
+  }
+  .quarta-tela .quarta-tela-container a {
+    width: 50%;
+    font-size: 0.7rem;
+  }
+  .sexta-tela {
+    height: 130vh;
+  }
+  .sexta-tela .sexta-tela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 4em;
+    height: 100%;
+    width: 100%;
+    padding: 3em;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 15%;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos p {
+    font-size: 1rem;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos small {
+    font-size: 0.6rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    height: 85%;
+    width: 100%;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    transition-duration: 0.3s;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano p {
+    font-size: 1rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .preco {
+    font-size: 1.5rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
+    width: 80%;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.3rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
+    font-size: 0.7rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
+    font-size: 0.8rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
+    color: #6201ff;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano a {
+    white-space: nowrap;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano:hover {
+    width: 100%;
+    box-shadow: 0 0 20px 2px #8133ff;
+  }
+  .oitava-tela {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    gap: 3em;
+  }
+  .oitava-tela p {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  .oitava-tela a {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    background-color: #1acc29;
+    box-shadow: 0 0 10px #1acc29;
+  }
+  .oitava-tela a:hover {
+    background-color: #16ad23;
+  }
+  .oitava-tela a img {
+    width: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .primeira-tela {
+    padding-top: 0em;
+    height: 70vh;
+  }
+  .primeira-tela .primeira-tela-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 0;
+    height: 100%;
+  }
+  .primeira-tela .primeira-tela-container img {
+    position: static;
+    width: 200px;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    width: 90%;
+    margin-top: 0em;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    font-size: 0.7rem;
+  }
+  .primeira-tela .primeira-tela-container .primeira-tela-textos small,
+.primeira-tela .primeira-tela-container .primeira-tela-textos p {
+    line-height: 1.5em;
+  }
+  .primeira-tela .primeira-tela-container a {
+    margin-top: 2.5em;
+    font-size: 0.7rem;
+  }
+  .segunda-tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35vh;
+  }
+  .segunda-tela .segunda-tela-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-top: 0em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .segunda-tela .segunda-tela-container p {
+    font-size: 1rem;
+  }
+  .segunda-tela .segunda-tela-container small {
+    width: 90%;
+    font-size: 0.7rem;
+  }
+  .terceira-tela {
+    height: 140vh;
+  }
+  .terceira-tela .terceira-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 2em;
+    padding-top: 0em;
+  }
+  .terceira-tela .terceira-tela-container h1 {
+    font-size: 1.2rem;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    width: 90%;
+    height: 100%;
+    font-size: 0.6rem;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .terceira-tela a {
+    font-size: 0.7rem;
+  }
+  .quarta-tela {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(../assets/mb3.jpg);
+    background-size: cover;
+  }
+  .quarta-tela .quarta-tela-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-left: 0em;
+  }
+  .quarta-tela .quarta-tela-container p {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .quarta-tela .quarta-tela-container small {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    width: 70%;
+  }
+  .quarta-tela .quarta-tela-container a {
+    width: 70%;
+    font-size: 0.7rem;
+  }
+  .quinta-tela {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 55vh;
+    background-image: url(../assets/mob2.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .quinta-tela .quinta-tela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin-right: 0em;
+    margin: 0 auto;
+    width: 80%;
+    gap: 2em;
+  }
+  .quinta-tela .quinta-tela-container p {
+    font-size: 1rem;
+  }
+  .quinta-tela .quinta-tela-container small {
+    line-height: 1rem;
+  }
+  .sexta-tela {
+    height: 130vh;
+  }
+  .sexta-tela .sexta-tela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 4em;
+    height: 100%;
+    width: 100%;
+    padding: 3em;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 15%;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos p {
+    font-size: 0.8rem;
+  }
+  .sexta-tela .sexta-tela-container .sexta-tela-textos small {
+    font-size: 0.6rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    height: 85%;
+    width: 100%;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 1em;
+    transition-duration: 0.3s;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano p {
+    font-size: 1rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .preco {
+    font-size: 1.5rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
+    width: 90%;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.1rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
+    font-size: 0.6rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i,
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
+    font-size: 0.8rem;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
+    color: #6201ff;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano a {
+    white-space: nowrap;
+    font-size: 0.6rem;
+    width: 95%;
+  }
+  .sexta-tela .sexta-tela-container .futuryxx-planos .plano:hover {
+    width: 100%;
+    box-shadow: 0 0 20px 2px #8133ff;
+  }
+  .setima-tela {
+    height: 50vh;
+    background-image: url(../assets/setimaTela.png);
+    background-size: cover;
+  }
+  .setima-tela .setima-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    -webkit-backdrop-filter: brightness();
+    backdrop-filter: brightness(40%);
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 2em;
+    text-align: center;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div p {
+    font-size: 1rem;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div small {
+    line-height: 1rem;
+    font-size: 0.6rem;
+  }
+  .setima-tela .setima-tela-container .premium-icon {
+    width: 60%;
+  }
+  .oitava-tela {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    gap: 3em;
+  }
+  .oitava-tela p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .oitava-tela a {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    width: 70%;
+    white-space: nowrap;
+    background-color: #1acc29;
+    box-shadow: 0 0 10px #1acc29;
+  }
+  .oitava-tela a:hover {
+    background-color: #16ad23;
+  }
+  .oitava-tela a img {
+    width: 15px;
+  }
+}
+@media (max-height: 505px) {
+  .setima-tela {
+    height: 50vh;
+    background-image: url(../assets/setimaTela.png);
+    background-size: cover;
+  }
+  .setima-tela .setima-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-top: 5em;
+    justify-content: center;
+    gap: 10em;
+    -webkit-backdrop-filter: brightness();
+    backdrop-filter: brightness(40%);
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 2em;
+    text-align: center;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div p {
+    font-size: 1rem;
+  }
+  .setima-tela .setima-tela-container .setima-tela-garantia div small {
+    line-height: 1rem;
+    font-size: 0.6rem;
+  }
+  .setima-tela .setima-tela-container .premium-icon {
+    width: 60%;
+  }
+  .terceira-tela {
+    height: 160vh;
+  }
+  .terceira-tela .terceira-tela-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 2em;
+    padding-top: 0em;
+  }
+  .terceira-tela .terceira-tela-container h1 {
+    font-size: 1.2rem;
+  }
+  .terceira-tela .terceira-tela-container a {
+    margin-top: 2em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    width: 90%;
+    height: 100%;
+    font-size: 0.6rem;
+  }
+  .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon,
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=responsiveness.css.map */

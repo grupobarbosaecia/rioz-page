@@ -1,0 +1,397 @@
+@import "./mixings";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+// root
+$corDestaque: #6201ff;
+$corTexto: #ffffff;
+$corFundo: #000000;
+
+// ajustes
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $corTexto;
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    background-color: $corFundo;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+// telas
+.primeira-tela {
+    @include direction (column);
+    background-image: url(../assets/bg1-min-scaled.jpg);
+    padding-top: 2em;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    .primeira-tela-container {
+        @include direction (column);
+        padding-top: 10em;
+        gap: 2em;
+        position: relative;
+        justify-content: center;
+        margin-left: 6.5em;
+        height: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: -2.3em;
+            width: 200px;
+        }
+        
+        .primeira-tela-textos {
+            @include direction (column);
+            margin-top: 3em;
+            gap: 2em;
+            width: 40%;
+            
+            p {
+                font-size: 1.4rem;
+            }
+
+            small, p {
+                line-height: 1.5em;
+            }
+        }
+
+        a {
+            width: 20em;
+            white-space: nowrap;
+        }
+    }
+}
+
+.segunda-tela {
+    height: 40vh;
+
+    .segunda-tela-container {
+        @include direction (column);
+        gap: 3em;
+        padding-top: 7em;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        small {
+            width: 70%;
+        }
+    }
+}
+
+.terceira-tela {
+    height: 125vh;
+
+    .terceira-tela-container {
+        @include direction (column);
+        align-items: center;
+        height: 100%;
+        gap: 3em;
+
+        .futuryxx-vantagens {
+            @include direction (column);
+            align-items: center;
+            width: 70%;
+            height: 70%;
+            gap: 2em;
+
+            .linha1, .linha2 {
+                @include direction (row);
+                gap: 1em;
+                justify-content: center;
+                width: 100%;
+                height: 50%;
+
+                .vantagem {
+                    @include direction (column);
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 2em;
+                    width: 100%;
+                    font-size: 0.8rem;
+
+                    .vantagem-icon {
+                        @include direction (row);
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -20px;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.quarta-tela {
+    height: 90vh;
+    background-image: url(../assets/bg2-scaled.jpg);
+    background-size: cover;
+
+    .quarta-tela-container {
+        @include direction (column);
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+        justify-content: center;
+        gap: 2em;
+        margin-left: 7em;
+
+        p {
+            font-size: 1.5rem
+        }
+
+        small {
+            line-height: 1.3rem;
+        }
+
+        a {
+            width: 80%;
+            white-space: nowrap;
+        }
+    }
+}
+
+.quinta-tela {
+    @include direction (column);
+    align-items: flex-end;
+    justify-content: center;
+    height: 65vh;
+    background-image: url(../assets/bg-scaled.jpg);
+    background-size: cover;
+
+    .quinta-tela-container {
+        @include direction (column);
+        background-color: #000000ce;
+        padding: 2em;
+        margin-right: 6em;
+        width: 40%;
+        gap: 2em;
+
+        p {
+            font-size: 1.7rem;
+        }
+
+        small {
+            line-height: 1.3rem;
+        }
+    }
+}
+
+.sexta-tela {
+    height: 130vh;
+
+    .sexta-tela-container {
+        @include direction (column);
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        gap: 3em;
+        height: 100%;
+        width: 50%;
+        padding: 3em;
+
+        .sexta-tela-textos {
+            @include direction (column);
+            gap: 2em;
+            
+            p {
+                
+                font-size: 1.5rem
+            }
+        }
+        
+        .futuryxx-planos {
+            @include direction (row);
+            gap: 1em;
+            height: 90%;
+            
+            .plano {
+                @include direction (column);
+                justify-content: space-around;
+                align-items: center;
+                width: 370px;
+                height: 100%;
+                transition-duration: 0.3s;
+
+                p {
+                    font-size: 1.3rem
+                }
+
+                .preco {
+                    font-size: 2.5rem;
+                }
+
+                .futuryxx-beneficios1, .futuryxx-beneficios2 {
+                    width: 80%;
+                    font-weight: bold;
+                    text-align: left;
+                    line-height: 1.7rem;
+
+                    li {
+                        @include direction (row);
+                        align-items: center;
+                        gap: 1em;
+                        justify-content: flex-start;
+                        font-size: 0.8rem;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .futuryxx-beneficios1 {
+                    i {
+                        color: $corDestaque;
+                    }
+                }
+
+                &:hover {
+                    width: 380px;
+                    box-shadow: 0 0 20px 2px #8133ff;
+                }
+            }
+        }
+    }
+}
+
+.setima-tela {
+    height: 90vh;
+    background-image: url(../assets/setimaTela.png);
+    background-size: cover;
+
+    .setima-tela-container {
+        @include direction (column);
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10em;
+        -webkit-backdrop-filter: brightness();
+        backdrop-filter: brightness(40%);
+
+        .setima-tela-garantia {
+            @include direction (row);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10em;
+
+            div {
+                @include direction (column);
+                width: 25%;
+                gap: 2em;
+
+                p {
+                    font-size: 1.6rem;
+                }
+
+                small {
+                    line-height: 1.3rem;
+                }
+            }
+        }
+
+        .premium-icon {
+            width: 30%;
+        }
+    }
+}
+
+.oitava-tela {
+    @include direction (column);
+    align-items: center;
+    height: 30vh;
+    gap: 3em;
+
+    p {
+        font-size: 1.7rem
+    }
+
+    a {
+        @include direction (row);
+        justify-content: center;
+        gap: 0.4em;
+        background-color: #1acc29;
+        box-shadow: 0 0 10px #1acc29;
+
+        &:hover {
+            background-color: #16ad23;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+}
+
+footer {
+    @include direction (column);
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+    background-color: #575757;
+    padding: 2em;
+    text-align: center;
+
+    p {
+        width: 90%;
+        font-size: 0.7rem;
+        line-height: 1.1rem;
+    }
+}
+
+// estilos
+.fundo-destaque {
+    background-color: #7926ff;
+}
+
+.fundo-destaque2 {
+    background-color: $corTexto;
+    color: $corDestaque;
+}
+
+.sombra-destaque {
+    box-shadow: 0 0 10px $corDestaque;
+}
+
+.sombra-destaque2 {
+    box-shadow: 0 0 10px $corFundo;
+}
+
+.borda-destaque {
+    border: 5px solid $corDestaque;
+}
+
+.texto-destaque {
+    font-weight: bold;
+}
+
+.hover-destaque {
+    &:hover {
+        background-color: #4c00c5;
+    }
+}

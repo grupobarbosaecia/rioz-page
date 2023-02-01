@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.primeira-tela {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/bg1-min-scaled.jpg);
+  padding-top: 2em;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.primeira-tela .primeira-tela-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10em;
+  gap: 2em;
+  position: relative;
+  justify-content: center;
+  margin-left: 6.5em;
+  height: 100%;
+}
+.primeira-tela .primeira-tela-container img {
+  position: absolute;
+  top: 0;
+  left: -2.3em;
+  width: 200px;
+}
+.primeira-tela .primeira-tela-container .primeira-tela-textos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  gap: 2em;
+  width: 40%;
+}
+.primeira-tela .primeira-tela-container .primeira-tela-textos p {
+  font-size: 1.4rem;
+}
+.primeira-tela .primeira-tela-container .primeira-tela-textos small, .primeira-tela .primeira-tela-container .primeira-tela-textos p {
+  line-height: 1.5em;
+}
+.primeira-tela .primeira-tela-container a {
+  width: 20em;
+  white-space: nowrap;
+}
+
+.segunda-tela {
+  height: 40vh;
+}
+.segunda-tela .segunda-tela-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-top: 7em;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.segunda-tela .segunda-tela-container p {
+  font-size: 1.3rem;
+}
+.segunda-tela .segunda-tela-container small {
+  width: 70%;
+}
+
+.terceira-tela {
+  height: 125vh;
+}
+.terceira-tela .terceira-tela-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 3em;
+}
+.terceira-tela .terceira-tela-container .futuryxx-vantagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  gap: 2em;
+}
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.quarta-tela {
+  height: 90vh;
+  background-image: url(../assets/bg2-scaled.jpg);
+  background-size: cover;
+}
+.quarta-tela .quarta-tela-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  justify-content: center;
+  gap: 2em;
+  margin-left: 7em;
+}
+.quarta-tela .quarta-tela-container p {
+  font-size: 1.5rem;
+}
+.quarta-tela .quarta-tela-container small {
+  line-height: 1.3rem;
+}
+.quarta-tela .quarta-tela-container a {
+  width: 80%;
+  white-space: nowrap;
+}
+
+.quinta-tela {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 65vh;
+  background-image: url(../assets/bg-scaled.jpg);
+  background-size: cover;
+}
+.quinta-tela .quinta-tela-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  padding: 2em;
+  margin-right: 6em;
+  width: 40%;
+  gap: 2em;
+}
+.quinta-tela .quinta-tela-container p {
+  font-size: 1.7rem;
+}
+.quinta-tela .quinta-tela-container small {
+  line-height: 1.3rem;
+}
+
+.sexta-tela {
+  height: 130vh;
+}
+.sexta-tela .sexta-tela-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 3em;
+  height: 100%;
+  width: 50%;
+  padding: 3em;
+}
+.sexta-tela .sexta-tela-container .sexta-tela-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.sexta-tela .sexta-tela-container .sexta-tela-textos p {
+  font-size: 1.5rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  height: 90%;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 370px;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano p {
+  font-size: 1.3rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .preco {
+  font-size: 2.5rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
+  width: 80%;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.7rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
+  font-size: 1rem;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
+  color: #6201ff;
+}
+.sexta-tela .sexta-tela-container .futuryxx-planos .plano:hover {
+  width: 380px;
+  box-shadow: 0 0 20px 2px #8133ff;
+}
+
+.setima-tela {
+  height: 90vh;
+  background-image: url(../assets/setimaTela.png);
+  background-size: cover;
+}
+.setima-tela .setima-tela-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  -webkit-backdrop-filter: brightness();
+  backdrop-filter: brightness(40%);
+}
+.setima-tela .setima-tela-container .setima-tela-garantia {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+.setima-tela .setima-tela-container .setima-tela-garantia div {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 2em;
+}
+.setima-tela .setima-tela-container .setima-tela-garantia div p {
+  font-size: 1.6rem;
+}
+.setima-tela .setima-tela-container .setima-tela-garantia div small {
+  line-height: 1.3rem;
+}
+.setima-tela .setima-tela-container .premium-icon {
+  width: 30%;
+}
+
+.oitava-tela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  gap: 3em;
+}
+.oitava-tela p {
+  font-size: 1.7rem;
+}
+.oitava-tela a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.4em;
+  background-color: #1acc29;
+  box-shadow: 0 0 10px #1acc29;
+}
+.oitava-tela a:hover {
+  background-color: #16ad23;
+}
+.oitava-tela a img {
+  width: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  width: 100%;
+  background-color: #575757;
+  padding: 2em;
+  text-align: center;
+}
+footer p {
+  width: 90%;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+}
+
+.fundo-destaque {
+  background-color: #7926ff;
+}
+
+.fundo-destaque2 {
+  background-color: #ffffff;
+  color: #6201ff;
+}
+
+.sombra-destaque {
+  box-shadow: 0 0 10px #6201ff;
+}
+
+.sombra-destaque2 {
+  box-shadow: 0 0 10px #000000;
+}
+
+.borda-destaque {
+  border: 5px solid #6201ff;
+}
+
+.texto-destaque {
+  font-weight: bold;
+}
+
+.hover-destaque:hover {
+  background-color: #4c00c5;
+}/*# sourceMappingURL=styles.css.map */
