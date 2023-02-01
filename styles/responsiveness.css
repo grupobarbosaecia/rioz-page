@@ -255,7 +255,6 @@ body {
     box-shadow: 0 0 20px 2px #8133ff;
   }
   .setima-tela {
-    height: 50vh;
     background-image: url(../assets/setimaTela.png);
     background-size: cover;
   }

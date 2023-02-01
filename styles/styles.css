@@ -266,6 +266,11 @@ a {
   -webkit-backdrop-filter: brightness();
   backdrop-filter: brightness(40%);
 }
+.setima-tela .setima-tela-container .setima-tela-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 .setima-tela .setima-tela-container .setima-tela-garantia {
   display: flex;
   flex-direction: row;
