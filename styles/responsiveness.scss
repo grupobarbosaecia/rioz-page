@@ -885,6 +885,12 @@ body {
 			-webkit-backdrop-filter: brightness();
 			backdrop-filter: brightness(40%);
 
+            .setima-tela-header {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+
 			.setima-tela-garantia {
 				@include direction(column);
 				width: 100%;

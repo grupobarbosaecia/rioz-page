@@ -806,6 +806,9 @@ body {
     -webkit-backdrop-filter: brightness();
     backdrop-filter: brightness(40%);
   }
+  .setima-tela .setima-tela-container .setima-tela-header p {
+    font-size: 0.8rem;
+  }
   .setima-tela .setima-tela-container .setima-tela-garantia {
     display: flex;
     flex-direction: column;

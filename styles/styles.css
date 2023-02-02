@@ -272,6 +272,7 @@ a {
   gap: 1em;
 }
 .setima-tela .setima-tela-container .setima-tela-header p {
+  font-size: 1.3rem;
   text-align: center;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia {
