@@ -173,9 +173,6 @@ body {
   .quinta-tela .quinta-tela-container small {
     line-height: 1.3rem;
   }
-  .sexta-tela {
-    height: 130vh;
-  }
   .sexta-tela .sexta-tela-container {
     display: flex;
     flex-direction: column;
@@ -293,10 +290,6 @@ body {
     width: 50%;
   }
   .oitava-tela {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 20vh;
     gap: 2em;
   }
   .oitava-tela p {
@@ -438,9 +431,6 @@ body {
     width: 50%;
     font-size: 0.7rem;
   }
-  .sexta-tela {
-    height: 130vh;
-  }
   .sexta-tela .sexta-tela-container {
     display: flex;
     flex-direction: column;
@@ -525,7 +515,6 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 30vh;
     width: 100%;
     gap: 3em;
   }
@@ -724,9 +713,6 @@ body {
   .quinta-tela .quinta-tela-container small {
     line-height: 1rem;
   }
-  .sexta-tela {
-    height: 130vh;
-  }
   .sexta-tela .sexta-tela-container {
     display: flex;
     flex-direction: column;
@@ -846,11 +832,6 @@ body {
     width: 60%;
   }
   .oitava-tela {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    height: 30vh;
     width: 100%;
     gap: 3em;
   }
@@ -976,5 +957,8 @@ body {
     width: 30px;
     height: 30px;
     font-size: 1rem;
+  }
+  .oitava-tela {
+    height: 130vh;
   }
 }/*# sourceMappingURL=responsiveness.css.map */

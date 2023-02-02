@@ -202,7 +202,7 @@ a {
 }
 
 .sexta-tela {
-    height: 130vh;
+    height: 150vh;
 
     .sexta-tela-container {
         @include direction (column);
@@ -297,6 +297,10 @@ a {
             display: flex;
             flex-direction: column;
             gap: 1em;
+
+            p {
+                text-align: center;
+            }
         }
 
         .setima-tela-garantia {

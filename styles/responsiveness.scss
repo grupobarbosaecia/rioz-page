@@ -190,8 +190,6 @@ body {
 	}
 
 	.sexta-tela {
-		height: 130vh;
-
 		.sexta-tela-container {
 			@include direction(column);
 			align-items: center;
@@ -322,9 +320,7 @@ body {
 	}
 
 	.oitava-tela {
-		@include direction(column);
-		align-items: center;
-		height: 20vh;
+
 		gap: 2em;
 
 		p {
@@ -479,8 +475,6 @@ body {
 	}
 
     .sexta-tela {
-		height: 130vh;
-
 		.sexta-tela-container {
 			@include direction(column);
 			align-items: center;
@@ -574,7 +568,6 @@ body {
         @include direction (column);
         text-align: center;
         align-items: center;
-        height: 30vh;
         width: 100%;
         gap: 3em;
     
@@ -791,8 +784,6 @@ body {
 	}
 
     .sexta-tela {
-		height: 130vh;
-
 		.sexta-tela-container {
 			@include direction(column);
 			align-items: center;
@@ -925,10 +916,6 @@ body {
 	}
 
     .oitava-tela {
-        @include direction (column);
-        text-align: center;
-        align-items: center;
-        height: 30vh;
         width: 100%;
         gap: 3em;
     
@@ -1066,6 +1053,6 @@ body {
 	}
 
     .oitava-tela {
-        
+        height: 130vh;
     }
 }
