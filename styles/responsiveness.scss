@@ -335,12 +335,6 @@ body {
 			@include direction(row);
 			justify-content: center;
 			gap: 0.4em;
-			background-color: #1acc29;
-			box-shadow: 0 0 10px #1acc29;
-
-			&:hover {
-                background-color: #139e1f;
-			}
 
 			img {
 				width: 20px;
@@ -595,12 +589,6 @@ body {
             align-items: center;
             justify-content: center;
             gap: 0.4em;
-            background-color: #1acc29;
-            box-shadow: 0 0 10px #1acc29;
-    
-            &:hover {
-                background-color: #16ad23;
-            }
     
             img {
                 width: 20px;
@@ -957,13 +945,7 @@ body {
             gap: 0.4em;
             width: 70%;
             white-space: nowrap;
-            background-color: #1acc29;
-            box-shadow: 0 0 10px #1acc29;
-    
-            &:hover {
-                background-color: #16ad23;
-            }
-    
+
             img {
                 width: 15px;
             }
@@ -971,9 +953,13 @@ body {
     }
 }
 
-@media (max-height: 505px) {
+@media (max-height: 585px) {
+    .primeira-tela {
+        height: 200vh;   
+    }
+
     .setima-tela {
-		height: 50vh;
+		height: 70vh;
 		background-image: url(../assets/setimaTela.png);
 		background-size: cover;
 
@@ -981,7 +967,7 @@ body {
 			@include direction(column);
 			height: 100%;
 			align-items: center;
-            margin-top: 5em;
+            margin-top: 10em;
 			justify-content: center;
 			gap: 10em;
 			-webkit-backdrop-filter: brightness();
@@ -1078,4 +1064,8 @@ body {
             }
         }
 	}
+
+    .oitava-tela {
+        
+    }
 }

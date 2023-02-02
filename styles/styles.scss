@@ -329,24 +329,22 @@ a {
 
 .oitava-tela {
     @include direction (column);
+    justify-content: center;
     align-items: center;
     height: 30vh;
     gap: 3em;
 
     p {
-        font-size: 1.7rem
+        font-size: 1.7rem;
+        text-align: center;
+        width: 50%;
     }
 
     a {
         @include direction (row);
         justify-content: center;
         gap: 0.4em;
-        background-color: #1acc29;
-        box-shadow: 0 0 10px #1acc29;
 
-        &:hover {
-            background-color: #16ad23;
-        }
 
         img {
             width: 20px;

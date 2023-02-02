@@ -298,23 +298,21 @@ a {
 .oitava-tela {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 30vh;
   gap: 3em;
 }
 .oitava-tela p {
   font-size: 1.7rem;
+  text-align: center;
+  width: 50%;
 }
 .oitava-tela a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0.4em;
-  background-color: #1acc29;
-  box-shadow: 0 0 10px #1acc29;
-}
-.oitava-tela a:hover {
-  background-color: #16ad23;
 }
 .oitava-tela a img {
   width: 20px;
