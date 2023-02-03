@@ -9,6 +9,7 @@
 
 body {
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,38 +24,32 @@ a {
   display: flex;
   flex-direction: column;
   background-image: url(../assets/bg1-min-scaled.jpg);
-  padding-top: 2em;
-  height: 100vh;
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 .primeira-tela .primeira-tela-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10em;
-  gap: 2em;
-  position: relative;
   justify-content: center;
-  margin-left: 6.5em;
-  height: 100%;
+  height: 85%;
+  margin-right: 42em;
+  width: 25%;
+  gap: 2em;
 }
 .primeira-tela .primeira-tela-container img {
-  position: absolute;
-  top: 0;
-  left: -2.3em;
   width: 200px;
 }
-.primeira-tela .primeira-tela-container .primeira-tela-textos {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3em;
-  gap: 2em;
-  width: 40%;
+.primeira-tela .primeira-tela-container p {
+  font-size: 1.5rem;
 }
-.primeira-tela .primeira-tela-container .primeira-tela-textos p {
-  font-size: 1.4rem;
+.primeira-tela .primeira-tela-container small {
+  font-size: 0.9rem;
 }
-.primeira-tela .primeira-tela-container .primeira-tela-textos small, .primeira-tela .primeira-tela-container .primeira-tela-textos p {
+.primeira-tela .primeira-tela-container small, .primeira-tela .primeira-tela-container p {
   line-height: 1.5em;
 }
 .primeira-tela .primeira-tela-container a {
@@ -62,65 +57,68 @@ a {
   white-space: nowrap;
 }
 
-.segunda-tela {
-  height: 40vh;
-}
-.segunda-tela .segunda-tela-container {
+.segunda-tela-container {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  padding-top: 7em;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  height: 100%;
-  width: 70%;
+  height: 25vh;
+  width: 50%;
   margin: 0 auto;
 }
-.segunda-tela .segunda-tela-container p {
+.segunda-tela-container p {
   font-size: 1.3rem;
 }
-.segunda-tela .segunda-tela-container small {
-  width: 70%;
+.segunda-tela-container small {
+  width: 60%;
+  font-size: 0.9rem;
+}
+.segunda-tela-container p, .segunda-tela-container small {
+  line-height: 1.5em;
 }
 
-.terceira-tela {
-  height: 125vh;
-}
-.terceira-tela .terceira-tela-container {
+.terceira-tela-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
-  gap: 3em;
+  gap: 2em;
+  height: 75vh;
 }
-.terceira-tela .terceira-tela-container .futuryxx-vantagens {
+.terceira-tela-container h1 {
+  font-size: 1.5rem;
+}
+.terceira-tela-container .futuryxx-vantagens {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
-  height: 70%;
+  width: 45%;
+  height: 27em;
   gap: 2em;
 }
-.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 {
+.terceira-tela-container .futuryxx-vantagens .linha1, .terceira-tela-container .futuryxx-vantagens .linha2 {
   display: flex;
   flex-direction: row;
+  width: 100%;
   gap: 1em;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   height: 50%;
 }
-.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+.terceira-tela-container .futuryxx-vantagens .linha1 .vantagem, .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2em;
   width: 100%;
   font-size: 0.8rem;
 }
-.terceira-tela .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon, .terceira-tela .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
+.terceira-tela-container .futuryxx-vantagens .linha1 .vantagem .vantagem-icon, .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem .vantagem-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,21 +129,25 @@ a {
   height: 40px;
   font-size: 1.3rem;
 }
+.terceira-tela-container .futuryxx-vantagens .linha1 .vantagem p, .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem p {
+  width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
 
 .quarta-tela {
-  height: 90vh;
+  height: 60vh;
   background-image: url(../assets/bg2-scaled.jpg);
   background-size: cover;
 }
 .quarta-tela .quarta-tela-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 25%;
   height: 100%;
   justify-content: center;
-  justify-content: center;
   gap: 2em;
-  margin-left: 7em;
+  margin-left: 20em;
 }
 .quarta-tela .quarta-tela-container p {
   font-size: 1.5rem;
@@ -154,7 +156,7 @@ a {
   line-height: 1.3rem;
 }
 .quarta-tela .quarta-tela-container a {
-  width: 80%;
+  width: 18em;
   white-space: nowrap;
 }
 
@@ -163,7 +165,7 @@ a {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  height: 65vh;
+  height: 47vh;
   background-image: url(../assets/bg-scaled.jpg);
   background-size: cover;
 }
@@ -172,8 +174,8 @@ a {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8078431373);
   padding: 2em;
-  margin-right: 6em;
-  width: 40%;
+  margin-right: 20em;
+  width: 30%;
   gap: 2em;
 }
 .quinta-tela .quinta-tela-container p {
@@ -181,58 +183,62 @@ a {
 }
 .quinta-tela .quinta-tela-container small {
   line-height: 1.3rem;
+  font-size: 0.9rem;
 }
 
-.sexta-tela {
-  height: 150vh;
-}
-.sexta-tela .sexta-tela-container {
+.sexta-tela-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 0 auto;
   gap: 3em;
-  height: 100%;
-  width: 50%;
-  padding: 3em;
+  height: 98vh;
+  width: 100vw;
 }
-.sexta-tela .sexta-tela-container .sexta-tela-textos {
+.sexta-tela-container .sexta-tela-textos {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  align-items: center;
 }
-.sexta-tela .sexta-tela-container .sexta-tela-textos p {
-  font-size: 1.5rem;
+.sexta-tela-container .sexta-tela-textos p {
+  font-size: 1.8rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos {
+.sexta-tela-container .sexta-tela-textos small {
+  width: 53%;
+  font-size: 0.9rem;
+}
+.sexta-tela-container .futuryxx-planos {
   display: flex;
   flex-direction: row;
-  gap: 1em;
-  height: 90%;
+  gap: 1.5em;
+  height: 72%;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano {
+.sexta-tela-container .futuryxx-planos .plano {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 3em 0;
   align-items: center;
-  width: 370px;
+  width: 25em;
   height: 100%;
   transition-duration: 0.3s;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano p {
+.sexta-tela-container .futuryxx-planos .plano p {
   font-size: 1.3rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano .preco {
+.sexta-tela-container .futuryxx-planos .plano .preco {
   font-size: 2rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
+.sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1, .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
   width: 80%;
   font-weight: bold;
   text-align: left;
   line-height: 1.7rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
+.sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li, .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -240,19 +246,19 @@ a {
   justify-content: flex-start;
   font-size: 0.8rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i, .sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
+.sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 li i, .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 li i {
   font-size: 1rem;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
+.sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
   color: #6201ff;
 }
-.sexta-tela .sexta-tela-container .futuryxx-planos .plano:hover {
-  width: 380px;
+.sexta-tela-container .futuryxx-planos .plano:hover {
+  scale: 1.02;
   box-shadow: 0 0 20px 2px #8133ff;
 }
 
 .setima-tela {
-  height: 90vh;
+  height: 80vh;
   background-image: url(../assets/setimaTela.png);
   background-size: cover;
 }
@@ -269,11 +275,15 @@ a {
 .setima-tela .setima-tela-container .setima-tela-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 }
 .setima-tela .setima-tela-container .setima-tela-header p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
+}
+.setima-tela .setima-tela-container .setima-tela-header a {
+  width: 50%;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia {
   display: flex;
@@ -286,17 +296,17 @@ a {
 .setima-tela .setima-tela-container .setima-tela-garantia div {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 18%;
   gap: 2em;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia div p {
   font-size: 1.6rem;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia div small {
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 .setima-tela .setima-tela-container .premium-icon {
-  width: 30%;
+  width: 22%;
 }
 
 .oitava-tela {
@@ -304,13 +314,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 20vh;
   gap: 3em;
 }
 .oitava-tela p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
-  width: 50%;
+  width: 30%;
 }
 .oitava-tela a {
   display: flex;
@@ -327,13 +337,14 @@ footer {
   flex-direction: column;
   gap: 1em;
   align-items: center;
+  margin-top: 3em;
   width: 100%;
   background-color: #575757;
   padding: 2em;
   text-align: center;
 }
 footer p {
-  width: 90%;
+  width: 50%;
   font-size: 0.7rem;
   line-height: 1.1rem;
 }
@@ -365,4 +376,8 @@ footer p {
 
 .hover-destaque:hover {
   background-color: #4c00c5;
+}
+
+.hover-destaque2:hover {
+  scale: 1.03;
 }/*# sourceMappingURL=styles.css.map */
