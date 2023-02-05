@@ -8,6 +8,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
   background-color: #000000;
   overflow-x: hidden;
 }
@@ -24,7 +27,7 @@ a {
   display: flex;
   flex-direction: column;
   background-image: url(../assets/bg1-min-scaled.jpg);
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -37,8 +40,8 @@ a {
   justify-content: center;
   height: 85%;
   margin-right: 42em;
-  width: 25%;
-  gap: 2em;
+  width: 30%;
+  gap: 1em;
 }
 .primeira-tela .primeira-tela-container img {
   width: 200px;
@@ -86,7 +89,8 @@ a {
   justify-content: center;
   height: 100%;
   gap: 2em;
-  height: 75vh;
+  width: 100vw;
+  height: 90vh;
 }
 .terceira-tela-container h1 {
   font-size: 1.5rem;
@@ -95,8 +99,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
-  height: 27em;
+  width: 60%;
+  height: 85%;
   gap: 2em;
 }
 .terceira-tela-container .futuryxx-vantagens .linha1, .terceira-tela-container .futuryxx-vantagens .linha2 {
@@ -106,7 +110,7 @@ a {
   gap: 1em;
   justify-content: space-around;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem, .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
   display: flex;
@@ -147,7 +151,7 @@ a {
   height: 100%;
   justify-content: center;
   gap: 2em;
-  margin-left: 20em;
+  margin-left: 10em;
 }
 .quarta-tela .quarta-tela-container p {
   font-size: 1.5rem;
@@ -194,7 +198,7 @@ a {
   text-align: center;
   margin: 0 auto;
   gap: 3em;
-  height: 98vh;
+  height: 115vh;
   width: 100vw;
 }
 .sexta-tela-container .sexta-tela-textos {
@@ -230,7 +234,7 @@ a {
   font-size: 1.3rem;
 }
 .sexta-tela-container .futuryxx-planos .plano .preco {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1, .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios2 {
   width: 80%;
@@ -279,7 +283,7 @@ a {
   gap: 1em;
 }
 .setima-tela .setima-tela-container .setima-tela-header p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .setima-tela .setima-tela-container .setima-tela-header a {
@@ -303,10 +307,11 @@ a {
   font-size: 1.6rem;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia div small {
+  font-size: 0.9rem;
   line-height: 1.5rem;
 }
 .setima-tela .setima-tela-container .premium-icon {
-  width: 22%;
+  width: 25%;
 }
 
 .oitava-tela {
