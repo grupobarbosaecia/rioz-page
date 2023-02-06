@@ -239,6 +239,7 @@ a {
     
     .futuryxx-planos {
         @include direction (row);
+        // align-items: center;
         gap: 1.5em;
         height: 72%;
         
@@ -248,7 +249,7 @@ a {
             padding: 3em 0;
             align-items: center;
             width: 25em;
-            height: 100%;
+            height: 80%;
             transition-duration: 0.3s;
 
             p {
@@ -297,6 +298,10 @@ a {
                 scale: (1.02);
                 box-shadow: 0 0 20px 2px #8133ff;
             }
+        }
+
+        .plano2 {
+            height: 70% !important;
         }
     }
 }
