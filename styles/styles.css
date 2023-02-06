@@ -178,7 +178,7 @@ a {
 .quinta-tela .quinta-tela-container {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8078431373);
+  background-color: rgba(0, 0, 0, 0.5882352941);
   padding: 2em;
   margin-right: 12%;
   width: 35%;
@@ -258,6 +258,15 @@ a {
 .sexta-tela-container .futuryxx-planos .plano .futuryxx-beneficios1 i {
   color: #6201ff;
 }
+.sexta-tela-container .futuryxx-planos .plano a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 95%;
+  height: 3em;
+}
 .sexta-tela-container .futuryxx-planos .plano:hover {
   scale: 1.02;
   box-shadow: 0 0 20px 2px #8133ff;
@@ -291,7 +300,9 @@ a {
   text-align: center;
 }
 .setima-tela .setima-tela-container .setima-tela-header a {
-  width: 50%;
+  text-align: center;
+  width: 70%;
+  white-space: nowrap;
 }
 .setima-tela .setima-tela-container .setima-tela-garantia {
   display: flex;
@@ -329,16 +340,13 @@ a {
 .oitava-tela p {
   font-size: 1.5rem;
   text-align: center;
-  width: 30%;
+  width: 80%;
 }
 .oitava-tela a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 0.4em;
-}
-.oitava-tela a img {
-  width: 20px;
+  white-space: nowrap;
 }
 
 footer {
@@ -353,7 +361,7 @@ footer {
   text-align: center;
 }
 footer p {
-  width: 50%;
+  width: 75%;
   font-size: 0.7rem;
   line-height: 1.1rem;
 }

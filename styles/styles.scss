@@ -195,7 +195,7 @@ a {
 
     .quinta-tela-container {
         @include direction (column);
-        background-color: #000000ce;
+        background-color: #00000096;
         padding: 2em;
         margin-right: 12%;
         width: 35%;
@@ -284,6 +284,15 @@ a {
                 }
             }
 
+            a {
+                @include direction (column);
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                width: 95%;
+                height: 3em;
+            }
+
             &:hover {
                 scale: (1.02);
                 box-shadow: 0 0 20px 2px #8133ff;
@@ -319,7 +328,9 @@ a {
             }
 
             a {
-                width: 50%;
+                text-align: center;
+                width: 70%;
+                white-space: nowrap;
             }
         }
 
@@ -362,17 +373,13 @@ a {
     p {
         font-size: 1.5rem;
         text-align: center;
-        width: 30%;
+        width: 80%;
     }
 
     a {
         @include direction (row);
         justify-content: center;
-        gap: 0.4em;
-
-        img {
-            width: 20px;
-        }
+        white-space: nowrap;
     }
 }
 
@@ -387,7 +394,7 @@ footer {
     text-align: center;
 
     p {
-        width: 50%;
+        width: 75%;
         font-size: 0.7rem;
         line-height: 1.1rem;
     }

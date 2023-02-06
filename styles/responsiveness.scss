@@ -1,3 +1,4 @@
+// width
 @media (max-width: 768px) {
     .primeira-tela {
         background-image: url(../assets/mob.jpg);
@@ -51,21 +52,233 @@
     .quarta-tela {
         background-image: url(../assets/mb3.jpg);
         background-size: contain;
+        background-repeat: no-repeat;
+        height: 65vh;
+
+        .quarta-tela-container {
+            height: 140%;
+            width: 80%;
+            align-items: center;
+            text-align: center;
+        }
+
     }
 
     .quinta-tela {
+        height: 50vh;
         background-image: url(../assets/mob2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
 
         .quinta-tela-container {
             width: 100%;
             text-align: center;
             margin-right: 0;
-            margin-top: 40%;
+            margin-top: 50%;
 
             p {
                 font-size: 1.5rem;
                 width: 100%;
             }
         }
+    }
+
+    .sexta-tela-container {
+        height: 140vh;
+
+        .futuryxx-planos {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .plano {
+                width: 90%;
+                padding: 1em 0;
+            }
+        }
+    }
+
+    .setima-tela {
+        height: 65vh;
+
+        .setima-tela-container {
+            gap: 10%;            
+
+            .setima-tela-garantia {
+                flex-direction: column;
+                text-align: center;
+                gap: 10%;
+                height: 100%;
+
+                div {
+
+                    width: 90%;
+                }
+
+                img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .primeira-tela {
+
+        .primeira-tela-container {
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            a {
+                scale: (0.8);
+            }
+        }
+    }
+
+    .segunda-tela-container {
+        height: 20vh;
+        gap: 1em;
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        small {
+            width: 90%;
+            font-size: 0.7rem;
+        }
+    }
+
+    .terceira-tela-container {
+        height: 180vh;
+    }
+
+    .quarta-tela {
+        height: 35vh;
+
+        .quarta-tela-container {
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            small {
+                font-size: 0.8rem;
+            }
+
+            a {
+                scale: (0.8);
+            }
+        }
+    }
+
+    .quinta-tela {
+        height: 60vh;
+        .quinta-tela-container {
+            gap: 0.5em;
+            
+            p {
+                font-size: 1.2rem;
+            }
+
+            small {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .sexta-tela-container {
+        .sexta-tela-textos {
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            small {
+                font-size: 0.8rem;
+                width: 80%;
+            }
+        }
+
+        .futuryxx-planos {
+
+            .plano {
+
+                p {
+                    font-size: 1rem;
+                }
+
+                small {
+                    font-size: 0.7rem;
+                }
+
+                .preco {
+                    font-size: 1.8rem;
+                }
+
+                .futuryxx-beneficios1, .futuryxx-beneficios2 {
+
+                    li {
+
+                        font-size: 0.7rem;
+
+                        i {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .setima-tela {
+
+        .setima-tela-container {
+
+            .setima-tela-header {
+
+
+                p {
+                    width: 90%;
+                    font-size: 1rem;
+                }
+
+            }
+        }
+    }
+
+    footer {
+
+        p {
+            width: 95%;
+            font-size: 0.6rem;
+        }
+    }
+}
+
+// height
+@media (max-height: 700px) {
+    .segunda-tela-container {
+        margin-bottom: 20%;
+    }
+
+    .terceira-tela-container {
+        gap: 4em;
+        height: 220vh;
+    }
+
+    .sexta-tela-container {
+        height: 150vh;
+    }
+}
+
+@media (max-height: 500px) {
+    body {
+        gap: 15em;
     }
 }
