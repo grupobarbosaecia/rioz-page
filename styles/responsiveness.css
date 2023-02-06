@@ -1,1 +1,58 @@
-/*# sourceMappingURL=responsiveness.css.map */
+@media (max-width: 768px) {
+  .primeira-tela {
+    background-image: url(../assets/mob.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .primeira-tela .primeira-tela-container {
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+    padding-top: 25%;
+    width: 95%;
+  }
+  .primeira-tela .primeira-tela-container img {
+    width: 70%;
+  }
+  .primeira-tela .primeira-tela-container p {
+    font-size: 1.3rem;
+  }
+  .segunda-tela-container {
+    width: 95%;
+  }
+  .segunda-tela-container p {
+    font-size: 1.1rem;
+  }
+  .terceira-tela-container {
+    height: 120vh;
+  }
+  .terceira-tela-container .futuryxx-vantagens {
+    width: 95%;
+  }
+  .terceira-tela-container .futuryxx-vantagens .linha1, .terceira-tela-container .futuryxx-vantagens .linha2 {
+    gap: 2em;
+    height: 100%;
+    flex-direction: column;
+  }
+  .terceira-tela-container .futuryxx-vantagens .linha1 .vantagem, .terceira-tela-container .futuryxx-vantagens .linha2 .vantagem {
+    height: 100%;
+    padding: 2em;
+  }
+  .quarta-tela {
+    background-image: url(../assets/mb3.jpg);
+    background-size: contain;
+  }
+  .quinta-tela {
+    background-image: url(../assets/mob2.jpg);
+  }
+  .quinta-tela .quinta-tela-container {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 40%;
+  }
+  .quinta-tela .quinta-tela-container p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}/*# sourceMappingURL=responsiveness.css.map */
