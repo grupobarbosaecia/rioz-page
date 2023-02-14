@@ -1,7 +1,26 @@
+:root {
+    --white-100: #FFFFFF;
+    --green-100: #B6FF00;
+    --green-200: #87BD00;
+    --black-700: #161616;
+    --black-900: #000000;
+    --purple-700: #621699;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kamerik 105', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1rem;
 }
 
 @media (max-width: 1080px) {

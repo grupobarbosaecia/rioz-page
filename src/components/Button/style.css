@@ -1,0 +1,26 @@
+.buttonArea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-200);
+    color: var(--black-900);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 55px;
+    padding: 0.5rem;
+}
+
+.button.sm {
+    width: 11rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+}
