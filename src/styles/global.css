@@ -17,6 +17,7 @@ body {
     font-family: 'Kamerik 105', sans-serif;
     min-width: 320px;
     min-height: 100vh;
+    background: var(--black-900);
 }
 
 h1 {
