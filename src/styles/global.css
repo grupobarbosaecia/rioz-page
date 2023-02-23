@@ -14,7 +14,8 @@
 }
 
 body {
-    font-family: 'Kamerik 105', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
     min-width: 320px;
     min-height: 100vh;
     background: var(--black-900);
@@ -29,7 +30,7 @@ h1 {
         font-size: 93.75%;
     }
 }
-  
+
 @media (max-width: 768px) {
     html {
         font-size: 87.5%;

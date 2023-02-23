@@ -77,27 +77,23 @@
     user-select: none;
 }
 
-.headerTitle h2 {
-    font-size: 2.5rem
-}
-
-.headerTitle h2 span {
+.headerTitle h1 span {
     font-weight: 900;
     position: relative;
 }
 
-.headerTitle h2 span::after {
+.headerTitle h1 span::after {
     content: "";
     background: linear-gradient(30deg, #1E06BF 37.9%, #BF0EBF 67.21%);
     height: 2px;
     width: 100%;
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     left: 0;
     animation: borderRunningreverse .2s reverse;
 }
 
-.headerTitle h2 span:hover::after{
+.headerTitle h1 span:hover::after {
     animation: borderRunning .2s forwards;
 }
 
@@ -118,7 +114,7 @@
     font-weight: 400;
 }
 
-.copy p > span {
+.copy p>span {
     color: var(--green-100);
     font-weight: 700;
 }
@@ -157,9 +153,9 @@
     backdrop-filter: blur(1px) saturate(85%);
     -webkit-backdrop-filter: blur(1px) saturate(85%);
     background-color: rgba(69, 72, 77, 0.5);
-    box-shadow: 0px -1px 3px 0px rgba(191,14,191,0.8);
-    -webkit-box-shadow: 0px -1px 3px 0px rgba(191,14,191,0.8);
-    -moz-box-shadow: 0px -1px 3px 0px rgba(191,14,191,0.8);
+    box-shadow: 0px -1px 3px 0px rgba(191, 14, 191, 0.8);
+    -webkit-box-shadow: 0px -1px 3px 0px rgba(191, 14, 191, 0.8);
+    -moz-box-shadow: 0px -1px 3px 0px rgba(191, 14, 191, 0.8);
     padding: 0.5rem 0.3rem;
     border-radius: 4px;
 }
@@ -228,12 +224,17 @@
     width: 75%;
     height: auto;
     border: 2px solid;
-    border-radius: 50px;
     padding: 2rem 1.5rem;
     color: var(--white-100);
-    background: transparent;
     margin-top: -11rem;
     gap: 1.715rem;
+    /* From https://css.glass */
+    background: rgb(20, 20, 20);
+    background: linear-gradient(135deg, rgba(21, 21, 21, 1) 0%, rgba(0, 0, 0, 1) 76%);
+    border-radius: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
 }
 
 .card-container {
@@ -312,7 +313,7 @@
     animation: borderRunningreverse .2s reverse;
 }
 
-.copyComoFunciona h4 span:hover{
+.copyComoFunciona h4 span:hover {
     animation: borderRunning .2s forwards;
 }
 
@@ -488,7 +489,7 @@
     gap: 0.2rem;
 }
 
-.priceCard .priceArea > span {
+.priceCard .priceArea>span {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.5rem;
@@ -514,12 +515,15 @@
     25% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 20.05%, #BF0EBF 89.53%);
     }
+
     50% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 45.98%, #BF0EBF 89.53%)
     }
+
     75% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 68.49%, #BF0EBF 89.53%);
     }
+
     100% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 89.53%);
     }
@@ -529,13 +533,321 @@
     25% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 20.05%, #BF0EBF 89.53%);
     }
+
     50% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 45.98%, #BF0EBF 89.53%)
     }
+
     75% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 68.49%, #BF0EBF 89.53%);
     }
+
     100% {
         background: linear-gradient(30deg, #BF0EBF -4.42%, #1E06BF 89.53%);
+    }
+}
+
+@keyframes floatAstronaut {
+    0% {
+        transform: translateY(-7px) cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    25% {
+        transform: translateY(7px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .startSections {
+        background-image: url('../../assets/sec1.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .title {
+        flex-direction: row;
+    }
+
+    .headerTitle {
+        order: -1;
+        align-items: start;
+        margin-left: 50px;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .imagesContainer .astronauta {
+        position: relative;
+        top: 0.8rem;
+        left: -.5rem;
+        width: calc(100% + 1vw);
+        height: auto;
+
+        animation: floatAstronaut 7s infinite ease-in-out;
+    }
+
+    .headerTitle h1,
+    .headerTitle h2 {
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: 600;
+        font-style: italic;
+        user-select: none;
+        text-align: left;
+    }
+
+    .headerTitle h1 span::after {
+        height: 3px;
+    }
+
+    .copy {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        justify-content: start;
+    }
+
+    .copy p {
+        text-align: left;
+        font-size: .8rem;
+        width: 90%;
+    }
+
+    .elementsContainer .logo {
+        position: absolute;
+        top: 10%;
+        left: 3.6rem;
+        width: 4rem;
+        height: auto;
+        z-index: 999;
+    }
+
+    .elementsContainer .meteoro {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: auto;
+        z-index: 99999;
+    }
+
+    .sectionTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        color: var(--white-100);
+        margin-top: 7.2rem;
+    }
+
+    .sectionTitle h4 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    .sectionTitle h4 span {
+        font-weight: 700;
+    }
+
+    .sectionTitle .cards {
+        gap: 3rem;
+    }
+
+    .sectionTitle .cards .card {
+        width: 12rem;
+        height: 4rem;
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0.8rem 0.8rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionTitle h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .videos {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        gap: 3rem;
+
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .headerTitle h1,
+    .headerTitle h2 {
+        font-size: calc(2.6rem + 1vw);
+
+    }
+
+    .copy p {
+        text-align: left;
+        font-size: 1rem;
+        width: 90%;
+        line-height: normal;
+    }
+
+    .elementsContainer .logo {
+        position: absolute;
+        top: 10%;
+        left: 3.6rem;
+        width: 5rem;
+        height: auto;
+        z-index: 999;
+    }
+
+    .sectionTitle {
+        margin-top: 8rem;
+    }
+
+    .sectionTitle h4 {
+        font-size: 1.6rem;
+    }
+
+    .sectionTitle .cards {
+        gap: 3rem;
+    }
+
+    .sectionTitle .cards .card {
+        width: 16rem;
+        height: 5rem;
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0.8rem 0.8rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionTitle h3 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .videos {
+        gap: 6rem;
+    }
+
+    .square {
+        width: 14.6rem;
+        height: 7.96rem;
+        background: var(--white-100);
+        z-index: 999;
+    }
+
+    .copy-video h4 {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .copy-video p {
+        font-size: 0.70rem;
+        width: 15rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .headerTitle h1,
+    .headerTitle h2 {
+        font-size: calc(3.6rem + 1vw);
+
+    }
+
+    .copy p {
+        text-align: left;
+        font-size: 1.4rem;
+        width: 90%;
+        line-height: normal;
+    }
+
+    .elementsContainer .logo {
+        position: absolute;
+        top: 10%;
+        left: 3.6rem;
+        width: 6rem;
+        height: auto;
+        z-index: 999;
+    }
+
+    .headerTitle h1 span::after {
+        height: 4px;
+    }
+
+    .sectionTitle {
+        margin-top: 10rem;
+    }
+
+    .sectionTitle h4 {
+        font-size: 2rem;
+    }
+
+    .sectionTitle .cards {
+        gap: 5rem;
+    }
+
+    .sectionTitle .cards .card {
+        width: 20rem;
+        height: 6rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0.8rem 0.8rem;
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionTitle h3 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    .videos {
+        width: 80%;
+        gap: 6rem;
+    }
+
+    .square {
+        width: 17.5rem;
+        height: 9.5rem;
+        background: var(--white-100);
+        z-index: 999;
+    }
+
+    .copy-video h4 {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .copy-video p {
+        font-size: 0.70rem;
+        width: 15rem;
     }
 }

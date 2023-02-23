@@ -15,30 +15,30 @@ export function StartSections() {
                         <div className="imagesContainer">
                             <div className="elementsContainer">
                                 <img src={Logo} className="logo" alt="Logo do Futuryxx" />
-
                                 <img src={Meteoro} className="meteoro" alt="Meteoro" />
                             </div>
 
                             <img src={Astronauta} className="astronauta" alt="Astronauta" />
                         </div>
                         <div className="headerTitle">
-                            <h1>futuryxx</h1>
-                            <h2>é o <span>futuro</span></h2>
+                            <h1>futuryxx<br></br> é o <span>futuro</span></h1>
+
+                            <div className="copy">
+                                <p>
+                                    Descubra o novo aplicativo que está pagando de
+                                    <span> R$ 100,00 a R$ 500,00 por dia</span> para pessoas
+                                    comuns de forma autormática!
+                                </p>
+                                </div>
+                                <Button text={"eu quero lucrar no automático"} size={"md"} alignment={"start"} />
+                            </div>
                         </div>
-                    </div>
-                    <div className="copy">
-                        <p>
-                            Descubra o novo aplicativo que está pagando de
-                            <span> 100 a 500 reais por dia</span> para pessoas
-                            comuns de forma autormática!
-                        </p>
-                    </div>
-                    <Button text={"eu quero lucrar no automático"} size={"sm"} />
+                    
                 </div>
 
                 <div className="secondSection">
                     <div className="sectionTitle">
-                        <h4>está cansado de não ter dinehiro para nada?</h4>
+                        <h4>está cansado de não ter dinheiro <span>para nada?</span></h4>
 
                         <div className="cards">
                             <div className="card">
