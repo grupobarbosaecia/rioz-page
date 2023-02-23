@@ -166,7 +166,7 @@ export function StartSections() {
                 <div className="priceCards">
                     <div className="priceCard">
                         <div className="bestSeller">
-                            <span>mais vendido</span>
+                            <span>Mais Vendido</span>
                         </div>
 
                         <div className="infoContent">
