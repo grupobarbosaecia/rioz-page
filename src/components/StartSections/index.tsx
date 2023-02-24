@@ -21,7 +21,9 @@ export function StartSections() {
                             <img src={Astronauta} className="astronauta" alt="Astronauta" />
                         </div>
                         <div className="headerTitle">
-                            <h1>futuryxx<br></br> é o <span>futuro</span></h1>
+                            <h1>
+                                futuryxx <br /> é o <span>futuro</span>
+                            </h1>
 
                             <div className="copy">
                                 <p>
