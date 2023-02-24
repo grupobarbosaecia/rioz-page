@@ -3,7 +3,7 @@ import { Button } from '../Button'
 import Logo from '../../assets/logo-m.svg'
 import Astronauta from '../../assets/astronauta-m.svg'
 import Meteoro from '../../assets/meteoro.svg'
-import Vantagens from '../../assets/futuryxx-vantagens.svg'
+import Vantagens from '../../assets/futuryxx-vantagens-lg.svg'
 import './style.css'
 
 export function StartSections() {
@@ -148,6 +148,7 @@ export function StartSections() {
 
                     <div className="carrouselVideos">
                         <div className="squareVideo"></div>
+                        <p><span>VÍDEO 4</span> Entenda como funciona o Futuryxx</p>
                     </div>
                 </div>
 
@@ -166,7 +167,7 @@ export function StartSections() {
                 <h3>escolha um dos planos</h3>
 
                 <div className="priceCards">
-                    <div className="priceCard">
+                    <div className="priceCard big">
                         <div className="bestSeller">
                             <span>Mais Vendido</span>
                         </div>
