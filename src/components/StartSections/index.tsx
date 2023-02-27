@@ -163,7 +163,7 @@ export function StartSections() {
                 </div>
             </section>
 
-            <section className="prices">
+            <section className="prices" id="planos">
                 <h3>escolha um dos planos</h3>
 
                 <div className="priceCards">
